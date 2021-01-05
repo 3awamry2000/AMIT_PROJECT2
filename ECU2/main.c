@@ -16,7 +16,7 @@ void main(void)
 	{
 		switch(SPI_RecieveByte())
 		{
-		case('f'):SET_BIT(PORTC,2);break;
+		case('f'):TOG_bIT(PORTC,2);break;
 		case('s'):TOG_bIT(PORTC,7);break;
 		}
 	}
